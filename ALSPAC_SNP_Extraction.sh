@@ -93,7 +93,7 @@ mkdir -p $out_dir
 if [ $gen = 1 ]; then
         echo "Outputting as gen file..."
         #Loop through chomosomes in QCed data
-        for i in {1..22}; do
+        for i in {01..22}; do
                 /shared/ucl/apps/bgen/1.1.4/bin/bgenix \
                 -g ${ALSPAC_QC}/filtered_${i}.bgen \
                 -incl-range $snp_list | \
@@ -118,7 +118,7 @@ fi
 if [ $bgen = 1 ]; then 
         echo "Outputting as bgen file..."
         #Loop extracting SNPs from SNP list as bgen 
-        for i in {1..22}; do 
+        for i in {01..22}; do 
                 echo "Extracting SNPs from chromosome ${i}..."
                 #Extract the SNPs as bgen 
                 /shared/ucl/apps/bgen/1.1.4/bin/bgenix \
