@@ -10,14 +10,14 @@ output_name=extracted_snps
 out_dir=.
 
 #Get location of QCed Data, snp_list and out_directory
-#from PARAMS file and other default arguments
-dir_path="$(dirname $(realpath $0))/PARAMS.params"          
-echo "Looking for PARAMS file in $dir_path..."
+#from paths file and other default arguments
+dir_path="$(dirname $(realpath $0))/paths.params"          
+echo "Looking for paths file in $dir_path..."
 if [ -f $dir_path ]; then
-	echo "Found PARAMS file"
+	echo "Found paths file"
 	source $dir_path
 else
-	echo "Could not find PARAMS file - Please follow installtion instructions on github"
+	echo "Could not find paths file - Please follow installation instructions on GitHub"
 	exit 1 
 fi
 
