@@ -2,7 +2,7 @@
 
 This pipeline allows researchers to rapidly extract specified SNPs of interest from ALSPAC genotyped data to use in analyses such as Mendelian Randomization, Polygenic Risk Scores, etc. 
 
-It has been adapted from code created to perform a similar task in UK Biobank - available here https://github.com/asalzy/MRPipeline.  It has been written to work UCL's Myriad cluster, but could easily be adapted for other environments. 
+It has been adapted from code created to perform a similar task in UK Biobank which can be found at https://github.com/asalzy/MRPipeline. It has been written to work on UCL's Myriad cluster but could easily be adapted for other environments. 
 
 ## Requirements
 
