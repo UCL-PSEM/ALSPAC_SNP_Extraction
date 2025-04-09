@@ -22,7 +22,7 @@ The script to run the programme.
 
 ### 1) Create SNP List
 
-The pipeline requires a list of SNPs provided as a single column in a text file. ALSPAC bgen files list SNPs by chr:pos, which are located by the script using the -incl-range function. As such, each SNP in the text file needs to be in the format of XX:xxxxxx-XX:xxxxxx, where the XX is the chromosome number and the xxxxxx is the same BP position (e.g. 02:123456-02:123456). If extracting SNPs from a table of summary statistics, this text file can easily be created in one step using an awk command similar to the following:
+The pipeline requires a list of SNPs provided as a single column in a text file. ALSPAC bgen files list SNPs by chr:pos and these are located by the script using the -incl-range function. As such, each SNP in the text file needs to be in the format of a range such as XX:xxxxxx-XX:xxxxxx, where the XX is the chromosome number and the xxxxxx is the same BP position (e.g. 02:123456-02:123456). If extracting SNPs from a table of summary statistics, this text file can easily be created in one step using an awk command similar to the following:
 
 `awk 'NR>1 {chr_bp = ($2 < 10 ? "0"$2 : $2) ":" $3; print chr_bp "-" $3}' /path/to/your/summary_stats.txt > /path/to/your/SNP_list.txt`
 
