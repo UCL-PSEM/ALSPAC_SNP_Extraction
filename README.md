@@ -30,7 +30,7 @@ The pipeline requires a list of SNPs provided as a single column in a text file.
 
 This file tells the script where to find the QCed dataset, where to find the SNP list, and where to output the results. It can be easily accessed and altered using a command such as 
 
-'vim params`
+`vim params`
 
 ### 3) Install and Run Script
 
