@@ -46,7 +46,7 @@ git clone https://github.com/scottchiesa/ALSPAC_SNP_Extraction/
 sh ./ALSPAC_SNP_Extraction.sh -b
 ````
 
-If you have previously updated the params file with all of the necessary information, this will create a single .bgen file containing your desired SNPS. If you want a .gen file, use -g instead of -b. If you haven't set the params file, you can manually set the required parameters using a command such as
+If you have previously updated the params file with all of the necessary information, running the above command will rapidly create a single .bgen file containing only your desired SNPS. If you want a .gen file, use -g instead of -b. If you haven't set the params file, you can manually set the required parameters using a command such as
 
 ```
 sh ./ALSPAC_SNP_Extraction.sh -b -s path/to/SNP_list.txt -o path/to/output_directory -n filename_for_output_file
