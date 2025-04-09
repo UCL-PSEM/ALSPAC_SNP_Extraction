@@ -6,13 +6,17 @@ It has been adapted from code created to perform a similar task in UK Biobank wh
 
 ## Requirements
 
-1) ALSPAC Genome-wide HRC Imputed Dataset - This consists of individual autosomal chromosome .bgen files supplied by ALSPAC with the naming convention 'filtered_01.bgen' to 'filtered_22.bgen'.
+### 1) ALSPAC Genome-wide HRC Imputed Dataset
+This consists of individual autosomal chromosome .bgen files supplied by ALSPAC with the naming convention 'filtered_01.bgen' to 'filtered_22.bgen'.
 
-2) SNP List - A list of the desired SNPS for extraction. 
+### 2) SNP List
+A list of the desired SNPS for extraction. 
 
-3) params file - A text file that allows the user to specify the desired directories for inputs/outputs/etc.
+### 3) Params file
+A text file that allows the user to specify the desired directories for inputs/outputs/etc.
 
-4) ALSPAC_SNP_Extraction.sh - The script to run the programme.
+### 4) ALSPAC_SNP_Extraction.sh
+The script to run the programme.
 
 ## How To Use
 
