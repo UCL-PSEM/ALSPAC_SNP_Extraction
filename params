@@ -5,7 +5,6 @@
 
 ALSPAC_QC="/path/to/ALSPAC/data/"
 
-
 #### Default output directories are originally commented out 
 # However, the '#' can be removed and a path for a default output directory and snp list can be included
 
