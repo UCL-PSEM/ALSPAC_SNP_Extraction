@@ -22,25 +22,26 @@ The script to run the programme.
 
 ## How To Use
 
-### 1) Create SNP List
+### 1) Clone Repository
+
+Clone this GitHub repo into your directory of choice using the command
+
+```
+git clone https://github.com/scottchiesa/ALSPAC_SNP_Extraction/
+```
+### 2) Create SNP List
 
 The pipeline requires a list of SNPs provided as a single column in a text file. ALSPAC bgen files list SNPs by chr:pos and these are located by the script using the -incl-range function. As such, each SNP in the text file needs to be in the format of a range such as XX:xxxxxx-XX:xxxxxx, where XX is the chromosome number and xxxxxx is the same BP position (e.g. 02:123456-02:123456). If extracting SNPs from a table of summary statistics, this text file can easily be created in one step using an awk command similar to the following:
 
 `awk 'NR>1 {chr_bp = ($2 < 10 ? "0"$2 : $2) ":" $3; print chr_bp "-" $3}' /path/to/your/summary_stats.txt > /path/to/your/SNP_list.txt`
 
-### 2) Modify Params File
+### 3) Modify Params File
 
 This file tells the script where to find the QCed dataset, where to find the SNP list, and where to output the results. It can be easily accessed and altered using a command such as 
 
 `vim params`
 
-### 3) Install and Run Script
-
-1) Clone this GitHub repo into your directory of choice using the command
-
-```
-git clone https://github.com/scottchiesa/ALSPAC_SNP_Extraction/
-```
+### 4) Run Script
 
 2) Run the script using the command
 
