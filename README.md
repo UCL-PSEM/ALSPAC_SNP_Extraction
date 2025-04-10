@@ -49,13 +49,13 @@ This file tells the script where to find the QCed dataset, where to find the SNP
 
 If you have previously updated the params file with all of the necessary information, running the above command will rapidly create a single .bgen file containing only your desired SNPS. If you want a .gen file, use -g instead of -b. If you haven't set the params file, you can manually set the required parameters using a command such as
 
-```
-sh ./ALSPAC_SNP_Extraction.sh \
+
+```sh ./ALSPAC_SNP_Extraction.sh \
     -b \ 
     -s path/to/SNP_list.txt \
     -o path/to/output_directory \ 
-    -n filename_for_output_file`
-```
+    -n filename_for_output_file```
+
 Please note that this script will only return SNPs in your list that are present within the ALSPAC genotyping data, some of which may differ from those available in the external summary stats. 
 
 
